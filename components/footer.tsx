@@ -18,7 +18,7 @@ export const Footer = () => {
             <p>
               South American Online Marketplace.
             </p>
-            <Link href={routes.signUp}>
+            <Link href={'mailto:team@andinomkt.com'}>
               <p className="text-blue-500">Contact Us</p>
             </Link>
           </div>
