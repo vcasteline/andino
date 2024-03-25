@@ -3,7 +3,7 @@ import React from 'react';
 const Privacy = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-2">Privacy Policy for Andino Marketplace</h1>
+      <h1 className="text-4xl font-bold mb-2">Privacy Policy</h1>
       <p className="text-gray-600 mb-6">Last Updated: March 25, 2024</p>
       <p className="mb-6">
         Andino Marketplace is committed to facilitating local and regional commerce, offering an online platform where merchants and consumers can connect, discover, and transact products and services efficiently and safely. We recognize the importance of privacy and the trust our users place in us, committing ourselves to transparency in our information use and to protecting your privacy.
