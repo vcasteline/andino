@@ -18,7 +18,7 @@ import { routes } from "@/lib/routes";
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "La Bellota",
-    href: "/",
+    href: "/products?seller=la-bellota",
     description:
       "Peruvian textile company, leader in the manufacturing and marketing of cotton fiber terry towels and robes in their most varied presentations"  },
   // {

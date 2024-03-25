@@ -15,19 +15,23 @@ export const VideoBackground = () => {
         // style={{width: '100%', height: '0px'}}
         className="relative top-0 left-0 w-full h-full object-cover"
       >
-        <source src="https://utfs.io/f/74dc6dec-6316-44e5-bfe5-56ff4f180700-ayykj0.mp4" type="video/mp4" />
+        <source
+          src="https://utfs.io/f/74dc6dec-6316-44e5-bfe5-56ff4f180700-ayykj0.mp4"
+          type="video/mp4"
+        />
       </video>
 
       <div className="absolute w-full h-full bg-translucentDark top-0 bottom-0 left-0 right-0">
-        <div className="absolute md:top-0 bottom-0 right-0 left-0 m-auto w-fit h-fit text-center">
+        <div className="absolute bottom-28     md:bottom-0 md:top-0 right-0 left-0 m-auto w-fit h-fit text-center">
           <div className="py-8 px-16 flex flex-col gap-3">
             <p className="uppercase text-secondary font-medium tracking-wide">
               Best B2B marketplace from South America to the us
             </p>
             <div className="flex text-secondary flex-col gap-2 mb-2">
               <Heading size="h1">Buy from Top Andino Businesses</Heading>
-              <Heading size="h3">
-                Selection of over 100 products at the best value.
+              <Heading size="h4">
+                Selection of products South America is known for at the best
+                value.
               </Heading>
             </div>
             <Link href={routes.products}>

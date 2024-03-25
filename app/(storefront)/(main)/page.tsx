@@ -48,7 +48,7 @@ export default async function Home() {
     <div className="">
       <VideoBackground />
       <ContentWrapper>
-        <div className="my-20">
+        <div className="md:my-20 my-10">
           
             <div className="">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -58,7 +58,7 @@ export default async function Home() {
                   
                   <Heading size="h2">Why do we exist?</Heading>
                   <Heading size="h1">
-                    To enable Andean Producers who provide excellent goods 
+                    To empower Andean sellers who produce excellent goods 
                   </Heading>
                   <div className="mt-8">
                     <Heading size="h4">
