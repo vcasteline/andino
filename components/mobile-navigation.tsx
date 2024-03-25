@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Menu } from "lucide-react";
+import { Icon, Menu, LucideProps, Shirt, ShirtIcon, User } from "lucide-react";
+import React from 'react';
 import { routes } from "@/lib/routes";
 import Link from "next/link";
 import {
@@ -41,18 +42,19 @@ export const MobileNavigation = () => {
             <ProductSearch />
           </div>
           <div className="flex items-start justify-center gap-2 flex-col">
-            <NavBarLink
-              image={images[0]}
-              href={routes.products}
-              name="Products"
-              setIsMobileNavOpen={setIsMobileNavOpen}
-            />
-            <NavBarLink
-              image={images[1]}
-              href={routes.account}
-              name="Account"
-              setIsMobileNavOpen={setIsMobileNavOpen}
-            />
+          <NavBarLink
+            href={routes.products}
+            name="Products"
+            icon={ShirtIcon}
+            setIsMobileNavOpen={setIsMobileNavOpen}
+          />
+          <NavBarLink
+            href={routes.account}
+            name="Account"
+            icon={User}
+            setIsMobileNavOpen={setIsMobileNavOpen}
+          />
+          
           </div>
         </SheetContent>
       </Sheet>
@@ -60,22 +62,19 @@ export const MobileNavigation = () => {
   );
 };
 
-const NavBarLink = (props: {
+interface NavBarLinkProps {
   href: string;
   name: string;
-  image: string;
+  icon: Icon; // Cambiamos el tipo de prop a 'Icon'
   setIsMobileNavOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}) => {
+}
+
+const NavBarLink: React.FC<NavBarLinkProps> = (props) => {
   const router = useRouter();
+
   return (
-    <div className="flex gap-2 items-center justify-between w-full rounded-md border border-border">
-      <ProductImage
-        alt="products"
-        src={props.image}
-        sizes="50px"
-        height="h-14"
-        width="w-14"
-      />
+    <div className="flex gap-2 items-center justify-between w-full rounded-md border border-border p-3">
+      <props.icon size={24} /> {/* Renderizamos el componente Icon */}
       <div className="w-full text-left">
         <Button
           variant="link"
@@ -90,3 +89,5 @@ const NavBarLink = (props: {
     </div>
   );
 };
+
+export default NavBarLink;
