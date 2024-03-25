@@ -16,7 +16,7 @@ export const Footer = () => {
         <div className="flex gap-2 items-center justify-start md:justify-end">
           <div className="flex items-start md:items-end justify-center flex-col gap-1 text-primary text-sm">
             <p>
-              Latin american online marketplace.
+              South American Online Marketplace.
             </p>
             <Link href={routes.signUp}>
               <p className="text-blue-500">Contact Us</p>

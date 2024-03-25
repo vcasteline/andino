@@ -16,7 +16,7 @@ export default async function StorefrontLayout({
 }) {
   return (
     <div className="min-h-screen w-full flex flex-col">
-      <FloatingStar />
+      {/* <FloatingStar /> */}
       <NavBar showSecondAnnouncementBar={true} />
       <div className="h-full flex-1 mb-8">{children}</div>
       <Footer />

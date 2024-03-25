@@ -1,5 +1,6 @@
 import { ContentWrapper } from "@/components/content-wrapper";
 import { SlideShow } from "@/components/slideshow";
+import { VideoBackground } from "@/components/video-background";
 import { Heading } from "@/components/ui/heading";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { db } from "@/db/db";
@@ -45,7 +46,7 @@ export default async function Home() {
 
   return (
     <div className="">
-      <SlideShow />
+      <VideoBackground />
       <ContentWrapper>
         <div className="my-20">
           
@@ -57,26 +58,26 @@ export default async function Home() {
                   
                   <Heading size="h2">Why do we exist?</Heading>
                   <Heading size="h1">
-                    To prove the Andean region can compete worldwide
+                    To enable Andean Producers who provide excellent goods 
                   </Heading>
                   <div className="mt-8">
                     <Heading size="h4">
                     Our marketplace exists as a testament that countries in the
                     Andean region can be competitively attractive with their
-                    industrial & manufacturing productive sectors worldwide. We
-                    want people to instantly recognize the Andes on the map.
+                    industrial & manufacturing productive sectors. We
+                    want people to instantly think of high-quality when they hear the word Andes.
                   </Heading>
                   </div>
                   
                   <div className="mt-12">
                     <Link href={routes.products}>
-                      <Button variant="default">View Featured Sellers</Button>
+                      <Button variant="default">View Featured Seller</Button>
                     </Link>
                   </div>
                 </div>
                 <Image
-                  className="rounded-3xl"
-                  src="/peruvian-andes.jpg"
+                  className="rounded-3xl bg-chiliRed"
+                  src="/alfadomus-export.jpeg"
                   width={1900}
                   height={1500}
                   alt="Andean region"
@@ -93,34 +94,33 @@ export default async function Home() {
           </div>
           <TabsContent value="for-sellers">
             <HomePageLayout
-              heading={<Heading size="h1">Sell online with ease.</Heading>}
+              heading={<Heading size="h1">Enter our trading channel.</Heading>}
               subheading={
                 <Heading size="h2">
-                  Access our global marketplace and sell your <br /> products to
-                  over 1 million visitors.
+                  Access the biggest Andean marketplace and let the orders come to you.
                 </Heading>
               }
             >
               <div className="md:grid md:grid-cols-3 gap-4 flex flex-col mt-12">
                 <FeatureBanner
-                  heading="No monthly fees"
-                  subheading="Fugit voluptates nihil ex et voluptas dignissimos blanditiis. Consectetur velit pariatur nihil quis nihil similique voluptatum in. Et nostrum ipsam quo magni. Velit et odit dolores."
+                  heading="No sale, no fee"
+                  subheading="We only take a fee from every sale you make, so it is in our best interest that you sell and rest assured you won't be charged otherwise."
                   icon={<DollarSign size={64} color="#FB4400" />}
                 />
                 <FeatureBanner
-                  heading="Access to millions of buyers"
-                  subheading="Fugit voluptates nihil ex et voluptas dignissimos blanditiis. Consectetur velit pariatur nihil quis nihil similique voluptatum in. Et nostrum ipsam quo magni. Velit et odit dolores."
+                  heading="Access to U.S. buyers"
+                  subheading="Increase your sales from exports thanks to Andino's access to businesses interested in purchasing from South America. "
                   icon={<User size={64} color="#FB4400" />}
                 />
                 <FeatureBanner
-                  heading="Quick and easy setup"
-                  subheading="Fugit voluptates nihil ex et voluptas dignissimos blanditiis. Consectetur velit pariatur nihil quis nihil similique voluptatum in. Et nostrum ipsam quo magni. Velit et odit dolores."
+                  heading="Integrated Notifications"
+                  subheading="Once you create your account and start selling, we will notify you on every new order made. Plus, you can contact the customer through our chat."
                   icon={<AlarmClock size={64} color="#FB4400" />}
                 />
               </div>
               <div className="flex items-center justify-center mt-12">
                 <Link href={routes.signUp}>
-                  <Button size="lg">Create account</Button>
+                  <Button size="lg">Start Selling</Button>
                 </Link>
               </div>
             </HomePageLayout>
@@ -130,24 +130,24 @@ export default async function Home() {
               heading={<Heading size="h1">Online shopping made easy.</Heading>}
               subheading={
                 <Heading size="h2">
-                  Shop hundreds of products from Andean sellers.
+                  Shop the highest quality products from Andean sellers.
                 </Heading>
               }
             >
               <div className="md:grid md:grid-cols-3 gap-4 flex flex-col mt-12 mb-12">
                 <FeatureBanner
                   heading="Production quality"
-                  subheading="Making sure that our producers are crafting products up to the standards of this platform. We love checking the quality of the products that are sold on Andino!"
+                  subheading="Making sure that our producers are crafting products up to the standards of this platform, we check the quality of the products that are sold on Andino."
                   icon={<PackageCheck size={64} color="#FB4400" />}
                 />
                 <FeatureBanner
                   heading="Producer verification"
-                  subheading="So that you can rest easy, every seller in our platform has to go through a verification process, assuring the individuals selling on our platform are good and legit businesses."
+                  subheading="So that you can rest easy, every seller in our platform has to go through a verification process, assuring the individuals selling on our platform are the top businesses in the region."
                   icon={<UserCheck size={64} color="#FB4400" />}
                 />
                 <FeatureBanner
                   heading="Purchase protection"
-                  subheading="We are committed to your satisfaction. If the order is wrong, in poor state, or never arrived, we are committed to reasonable refunds up to 100% of the order value."
+                  subheading="We are fully committed to your satisfaction. If the rare event that an order is wrong, in poor state, or never arrived, we will perform reasonable refunds up to 100% of the order value."
                   icon={<ShieldCheck size={64} color="#FB4400" />}
                 />
               </div>

@@ -21,24 +21,24 @@ const components: { title: string; href: string; description: string }[] = [
     href: "/",
     description:
       "Peruvian textile company, leader in the manufacturing and marketing of cotton fiber terry towels and robes in their most varied presentations"  },
-  {
-    title: "Alfadomus",
-    href: "/",
-    description:
-      "Leading Ecuadorian company offering a variety of construction products, made with natural materials and international standards compliance.",
-  },
-  {
-    title: "Dave's Deals",
-    href: "/",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet.",
-  },
-  {
-    title: "Tim's Trainers",
-    href: "/",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet.",
-  },
+  // {
+  //   title: "Alfadomus",
+  //   href: "/",
+  //   description:
+  //     "Leading Ecuadorian company offering a variety of construction products, made with natural materials and international standards compliance.",
+  // },
+  // {
+  //   title: "Dave's Deals",
+  //   href: "/",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet.",
+  // },
+  // {
+  //   title: "Tim's Trainers",
+  //   href: "/",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet.",
+  // },
 ];
 
 export function MenuItems() {
@@ -52,7 +52,7 @@ export function MenuItems() {
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <NavigationMenuTrigger>Collections</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -84,11 +84,11 @@ export function MenuItems() {
               </ListItem>
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Featured Sellers</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Featured Seller</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-1 lg:w-[600px] ">
               {components.map((component) => (
                 <ListItem
                   key={component.title}
