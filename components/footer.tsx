@@ -1,7 +1,5 @@
-import { GithubIcon } from "lucide-react";
 import { ContentWrapper } from "./content-wrapper";
 import { Logo } from "./logo";
-import { Heading } from "@/components/ui/heading";
 import Link from "next/link";
 import { routes } from "@/lib/routes";
 
@@ -21,6 +19,9 @@ export const Footer = () => {
             <Link href={'mailto:team@andinomkt.com'}>
               <p className="text-blue-500">Contact Us</p>
             </Link>
+            <Link href={"/privacy"}>
+              <p className="text-blue-500">Privacy Policy</p>
+            </Link>            
           </div>
         </div>
       </ContentWrapper>

@@ -9,6 +9,7 @@ export const routes = {
   cart: "/cart",
   checkout: "/checkout",
   orderConfirmation: "order-confirmation",
+  privacy: "/privacy",
 };
 
 export const anchorTags = {
