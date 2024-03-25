@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const VideoBackground = () => {
   return (
-    <div className="relative w-full h-[550px]">
+    <div className="relative w-full h-[650px]">
       <video
         autoPlay
         loop
