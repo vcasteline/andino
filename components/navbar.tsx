@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Logo } from "./logo";
 import { ContentWrapper } from "./content-wrapper";
-import { Truck } from "lucide-react";
+import { Truck, User } from "lucide-react";
 import { MenuItems } from "./menu-items";
 import { Line } from "./line";
 import { AnnouncementBar } from "./announcement-bar";
@@ -48,8 +48,8 @@ export const NavBar = ({
             <MobileNavigation />
           </div>
         </ContentWrapper>
-        <ContentWrapper className="p-4 hidden md:block">
-          <ul className="flex items-center justify-between gap-12 py-2">
+        <ContentWrapper className="p-2 hidden md:block">
+          <ul className="flex items-center justify-between gap-12 py-2 px-4">
             <li>
               <Link href="/">
                 <Logo />
@@ -63,7 +63,8 @@ export const NavBar = ({
                 href={routes.account}
                 className="uppercase text-primary text-sm"
               >
-                My Account
+                <User size={26}></User>
+             
               </Link>
             </li>
             <li>

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const VideoBackground = () => {
   return (
-    <div className="relative">
+    <div className="relative w-full h-[550px]">
       <video
         autoPlay
         loop
@@ -15,7 +15,7 @@ export const VideoBackground = () => {
         // style={{width: '100%', height: '0px'}}
         className="relative top-0 left-0 w-full h-full object-cover"
       >
-        <source src="/andes-mountains-video.mp4" type="video/mp4" />
+        <source src="https://utfs.io/f/74dc6dec-6316-44e5-bfe5-56ff4f180700-ayykj0.mp4" type="video/mp4" />
       </video>
 
       <div className="absolute w-full h-full bg-translucentDark top-0 bottom-0 left-0 right-0">

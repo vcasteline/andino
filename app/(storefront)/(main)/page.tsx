@@ -51,7 +51,7 @@ export default async function Home() {
         <div className="my-20">
           
             <div className="">
-              <div className="flex">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 
                 <div className="m-10">
                   {" "}
@@ -68,20 +68,22 @@ export default async function Home() {
                     want people to instantly think of high-quality when they hear the word Andes.
                   </Heading>
                   </div>
-                  
                   <div className="mt-12">
                     <Link href={routes.products}>
                       <Button variant="default">View Featured Seller</Button>
                     </Link>
                   </div>
                 </div>
-                <Image
-                  className="rounded-3xl bg-chiliRed"
-                  src="/alfadomus-export.jpeg"
-                  width={1900}
-                  height={1500}
-                  alt="Andean region"
-                ></Image>
+                <div className="">
+                  <Image
+                    className="rounded-3xl bg-chiliRed"
+                    src="/alfadomus-export.jpeg"
+                    width={650}
+                    height={650}
+                    alt="Andean region"
+                  ></Image>
+                </div>
+                
               </div>
             </div>
         </div>

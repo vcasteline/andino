@@ -4,8 +4,8 @@ import React from "react";
 import { Toaster } from "@/components/ui/Toaster";
 
 export const metadata = {
-  title: "OneStopShop - Online marketplace",
-  description: "Online marketplace",
+  title: "Andino - B2B Marketplace",
+  description: "An online marketplace featuring high-quality South American goods such as Pima Cotton Towels and more. We are creating a trading channel between Andean region producers and US consumers.",
 };
 
 export default async function RootLayout({
@@ -19,7 +19,7 @@ export default async function RootLayout({
         <head>
           <script
             defer
-            data-domain="onestopshop.jackblatch.com"
+            data-domain="andinomarketplace.com"
             src="https://plausible.io/js/script.tagged-events.js"
           ></script>
         </head>
