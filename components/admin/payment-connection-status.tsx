@@ -9,7 +9,7 @@ import {
 import { singleLevelNestedRoutes } from "@/lib/routes";
 import { cn } from "@/lib/utils";
 import { hasConnectedStripeAccount } from "@/server-actions/stripe/account";
-import { AlertCircle, ChevronDown } from "lucide-react";
+import { AlertCircle, CheckCircle2, ChevronDown } from "lucide-react";
 import Link from "next/link";
 
 export const PaymentConnectionStatus = async () => {
@@ -25,7 +25,7 @@ export const PaymentConnectionStatus = async () => {
             : "bg-yellow-100 border-yellow-500 text-yellow-700"
         )}
       >
-        <AlertCircle size={16} />
+        {connectedStripeAccount?  <CheckCircle2 size={16} /> : <AlertCircle size={16} />}
         <p className="font-bold">Payments:</p>
         <p>{connectedStripeAccount ? "Connected" : "Not connected"}</p>
         {/* <ChevronDown size={18} /> */}
