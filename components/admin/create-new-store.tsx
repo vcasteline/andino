@@ -60,16 +60,14 @@ export const CreateNewStore = (props: { createStore: typeof createStore }) => {
         </div>
       </form>
       <div className="col-span-1">
-        <Heading size="h3">Why sell on One Stop Shop?</Heading>
+        <Heading size="h3">Why sell on Andino?</Heading>
         <p className="mt-2">
-          Thousands of visitors visit this site every day, searching for a whole
-          range of products. Get the exposure your products deserve by creating
-          a store.
+          To increase your products reach in the U.S. market.
         </p>
         <ul className="list-disc ml-6 mt-8 flex flex-col gap-2">
-          <li>Thousands of visitors every day</li>
-          <li>No monthly fees</li>
-          <li>24/7 customer support</li>
+          <li>Competitive custom-tailored comission</li>
+          <li>No sale, no comission</li>
+          <li>Access to U.S. buyers</li>
         </ul>
       </div>
     </div>

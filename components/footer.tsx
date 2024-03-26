@@ -13,9 +13,9 @@ export const Footer = () => {
         </div>
         <div className="flex gap-2 items-center justify-start md:justify-end">
           <div className="flex items-start md:items-end justify-center flex-col gap-1 text-primary text-sm">
-            <p>
-              South American Online Marketplace.
-            </p>
+            {/* <p>
+              Andino B2B Marketplace.
+            </p> */}
             <Link href={'mailto:team@andinomkt.com'}>
               <p className="text-blue-500">Contact Us</p>
             </Link>

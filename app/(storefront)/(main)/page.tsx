@@ -105,19 +105,19 @@ export default async function Home() {
             >
               <div className="md:grid md:grid-cols-3 gap-4 flex flex-col mt-12">
                 <FeatureBanner
-                  heading="No sale, no fee"
-                  subheading="We only take a fee from every sale you make, so it is in our best interest that you sell and rest assured you won't be charged otherwise."
-                  icon={<DollarSign size={64} color="#FB4400" />}
+                  heading="No sale, no commission"
+                  subheading="We only take a small commission from every sale you make, so it is in our best interest to maximize your reach in the U.S."
+                  icon={<DollarSign size={64} color="#3953A5" />}
                 />
                 <FeatureBanner
                   heading="Access to U.S. buyers"
                   subheading="Increase your sales from exports thanks to Andino's access to businesses interested in purchasing from South America. "
-                  icon={<User size={64} color="#FB4400" />}
+                  icon={<User size={64} color="#3953A5" />}
                 />
                 <FeatureBanner
                   heading="Integrated Notifications"
                   subheading="Once you create your account and start selling, we will notify you on every new order made. Plus, you can contact the customer through our chat."
-                  icon={<AlarmClock size={64} color="#FB4400" />}
+                  icon={<AlarmClock size={64} color="#3953A5" />}
                 />
               </div>
               <div className="flex items-center justify-center mt-12">
@@ -140,17 +140,17 @@ export default async function Home() {
                 <FeatureBanner
                   heading="Production quality"
                   subheading="Making sure that our producers are crafting products up to the standards of this platform, we check the quality of the products that are sold on Andino."
-                  icon={<PackageCheck size={64} color="#FB4400" />}
+                  icon={<PackageCheck size={64} color="#3953A5" />}
                 />
                 <FeatureBanner
                   heading="Producer verification"
                   subheading="So that you can rest easy, every seller in our platform has to go through a verification process, assuring the individuals selling on our platform are the top businesses in the region."
-                  icon={<UserCheck size={64} color="#FB4400" />}
+                  icon={<UserCheck size={64} color="#3953A5" />}
                 />
                 <FeatureBanner
                   heading="Purchase protection"
                   subheading="We are fully committed to your satisfaction. If the rare event that an order is wrong, in poor state, or never arrived, we will perform reasonable refunds up to 100% of the order value."
-                  icon={<ShieldCheck size={64} color="#FB4400" />}
+                  icon={<ShieldCheck size={64} color="#3953A5" />}
                 />
               </div>
               <Heading size="h2">Top Picks</Heading>
