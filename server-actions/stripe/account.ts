@@ -60,7 +60,16 @@ export async function createAccountLink() {
       // otherwise, create new stripeAccountId
     } else {
       const { id } = await stripe.accounts.create({
-        type: "standard",
+        type: "express",
+        country: "PE",
+        capabilities: {
+          card_payments: {
+            requested: true,
+          },
+          transfers: {
+            requested: true,
+          },
+        },
       });
       // Stripe api failed, throw error
       if (!id) throw new Error("Stripe account not created");
