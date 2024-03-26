@@ -41,9 +41,9 @@ export default async function PaymentsPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button size="sm" className="mt-4">
+              {/* <Button size="sm" className="mt-4">
                 Update in Stripe
-              </Button>
+              </Button> */}
             </a>
           </div>
         </div>

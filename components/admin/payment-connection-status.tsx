@@ -28,21 +28,21 @@ export const PaymentConnectionStatus = async () => {
         <AlertCircle size={16} />
         <p className="font-bold">Payments:</p>
         <p>{connectedStripeAccount ? "Connected" : "Not connected"}</p>
-        <ChevronDown size={18} />
+        {/* <ChevronDown size={18} /> */}
       </DropdownMenuTrigger>
-      <DropdownMenuContent>
+      {/* <DropdownMenuContent>
         <DropdownMenuLabel>Payments</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuItem>
           <Link
-            className="w-full h-full" /* maximises clickable area */
+            className="w-full h-full" 
             href={singleLevelNestedRoutes.account.payments}
           >
             Settings
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem>Learn more</DropdownMenuItem>
-      </DropdownMenuContent>
+      </DropdownMenuContent> */}
     </DropdownMenu>
   );
 };
