@@ -63,12 +63,12 @@ export async function createAccountLink() {
         country: "PE",
         type: "express",
         capabilities: {
-          card_payments: {
-            requested: false,
-          },
           transfers: {
             requested: true,
           },
+        },
+        tos_acceptance: {
+          service_agreement: 'recipient',
         },
       });
       // Stripe api failed, throw error
