@@ -64,7 +64,7 @@ export async function createAccountLink() {
         type: "express",
         capabilities: {
           card_payments: {
-            requested: true,
+            requested: false,
           },
           transfers: {
             requested: true,
