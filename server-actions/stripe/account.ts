@@ -60,8 +60,8 @@ export async function createAccountLink() {
       // otherwise, create new stripeAccountId
     } else {
       const { id } = await stripe.accounts.create({
-        type: "express",
         country: "PE",
+        type: "express",
         capabilities: {
           card_payments: {
             requested: true,
