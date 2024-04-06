@@ -87,7 +87,7 @@ export default async function StorefrontProductDetails(props: {
             {currencyFormatter(Number(product.price))}
           </Text>
           <Text className="text-sm my-4">
-            Minimum order: {product.inventory}
+            Minimum order: {new Intl.NumberFormat().format(Number(product.inventory))}
           </Text>
           <ProductForm
             addToCartAction={addToCart}

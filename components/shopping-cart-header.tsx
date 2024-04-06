@@ -24,14 +24,15 @@ export const ShoppingCartHeader = async () => {
     !!cartItems &&
     cartItems.reduce((acc, item) => (acc += Number(item.qty)), 0);
 
+  const numberOfUniqueProducts = cartItemDetails.length;
   return (
     <SheetWrapper
       trigger={
         <SheetTrigger className="flex items-center justify-center relative -left-2">
           <ShoppingCart size={26} />
-          {numberOfCartItems && numberOfCartItems > 0 ? (
+          {numberOfUniqueProducts && numberOfUniqueProducts > 0 ? (
             <span className="bg-primary rounded-full w-6 h-6 text-white flex items-center justify-center text-sm absolute -top-2 -right-3">
-              {numberOfCartItems}
+              {numberOfUniqueProducts}
             </span>
           ) : null}
         </SheetTrigger>
@@ -53,11 +54,11 @@ export const ShoppingCartHeader = async () => {
         <SheetTitle>
           Cart{" "}
           {numberOfCartItems && numberOfCartItems > 0
-            ? `(${numberOfCartItems})`
+            ? `(${numberOfUniqueProducts})`
             : ""}
         </SheetTitle>
         <SheetDescription className="border border-border bg-secondary p-2 rounded-md flex items-center justify-center text-center py-3">
-          Free shipping on all orders over $50
+          All orders are insured with Andino Buyer Protection.
         </SheetDescription>
       </SheetHeader>
       {numberOfCartItems && numberOfCartItems > 0 ? (

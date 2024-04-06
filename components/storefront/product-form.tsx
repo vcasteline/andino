@@ -20,7 +20,7 @@ export const ProductForm = (props: {
   disableQuantitySelector?: boolean;
   buttonSize?: "default" | "sm";
 }) => {
-  const [quantity, setQuantity] = useState<string | number>(1);
+  const [quantity, setQuantity] = useState<string | number>(Number(props.availableInventory));
   let [isPending, startTransition] = useTransition();
 
   return (
@@ -87,8 +87,10 @@ export const ProductForm = (props: {
       <div>
       {(!props.disableQuantitySelector &&
         <p className="text-xl my-4 mt-12">
-          Total: {Number(quantity)} x ${Number(props.price)} = $
-          {(Number(quantity) * Number(props.price)).toFixed(2)}
+          Total: {new Intl.NumberFormat().format(Number(quantity))} x ${Number(props.price)} = $
+          {(new Intl.NumberFormat().format(
+            Number((Number(quantity) * Number(props.price)).toFixed(2))
+            ))}
         </p>
         )
       }

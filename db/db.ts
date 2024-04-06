@@ -13,7 +13,7 @@ const connection = connect({
 export const db = drizzle(connection);
 
 // syncs the migrations folder to PlanetScale
-process.env.NODE_ENV === "development" &&
-  migrate(db as any, { migrationsFolder: "./migrations-folder" })
-    .then((res) => res)
-    .catch((err) => console.log("Migration error in db.ts:", err));
+// process.env.NODE_ENV === "development" &&
+//   migrate(db as any, { migrationsFolder: "./migrations-folder" })
+//     .then((res) => res)
+//     .catch((err) => console.log("Migration error in db.ts:", err));
